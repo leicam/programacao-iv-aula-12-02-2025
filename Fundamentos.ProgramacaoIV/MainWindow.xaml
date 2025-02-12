@@ -1,0 +1,51 @@
+﻿<Window x:Class="Fundamentos.ProgramacaoIV.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Fundamentos.ProgramacaoIV"
+        mc:Ignorable="d"
+        Title="UMFG Educacional" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Column="0" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="ButtonByte" Grid.Row="0" Click="ButtonByte_Click" Foreground="Gray">byte</Button>
+            <Button x:Name="ButtonShort" Grid.Row="1" Click="ButtonShort_Click" Foreground="Gray">short</Button>
+            <Button x:Name="ButtonUshort" Grid.Row="2" Click="ButtonUshort_Click" Foreground="Gray">ushort</Button>
+            <Button x:Name="ButtonInt" Grid.Row="3" Click="ButtonInt_Click" Foreground="Gray">int</Button>
+            <Button x:Name="ButtonUint" Grid.Row="4" Click="ButtonUint_Click" Foreground="Gray">uint</Button>
+            <Button x:Name="ButtonLong" Grid.Row="5" Click="ButtonLong_Click" Foreground="Gray">long</Button>
+            <Button x:Name="ButtonUlong" Grid.Row="6" Click="ButtonUlong_Click" Foreground="Gray">ulong</Button>
+        </Grid>
+
+        <Grid Grid.Column="1" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+
+            <Button x:Name="ButtonFloat" Grid.Row="0" Click="ButtonFloat_Click" Foreground="Gray">float</Button>
+            <Button x:Name="ButtonDouble" Grid.Row="1" Click="ButtonDouble_Click" Foreground="Gray">double</Button>
+            <Button x:Name="ButtonDecimal" Grid.Row="2" Click="ButtonDecimal_Click" Foreground="Gray">decimal</Button>
+            <Button x:Name="ButtonValidacao" Grid.Row="3" Click="ButtonValidacao_Click" Foreground="Gray">validacao</Button>
+        </Grid>
+    </Grid>
+</Window>
