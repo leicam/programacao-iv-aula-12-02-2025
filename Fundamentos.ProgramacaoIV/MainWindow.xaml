@@ -23,15 +23,17 @@
                 <RowDefinition Height="45"/>
                 <RowDefinition Height="45"/>
                 <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="ButtonByte" Grid.Row="0" Click="ButtonByte_Click" Foreground="Gray">byte</Button>
-            <Button x:Name="ButtonShort" Grid.Row="1" Click="ButtonShort_Click" Foreground="Gray">short</Button>
-            <Button x:Name="ButtonUshort" Grid.Row="2" Click="ButtonUshort_Click" Foreground="Gray">ushort</Button>
-            <Button x:Name="ButtonInt" Grid.Row="3" Click="ButtonInt_Click" Foreground="Gray">int</Button>
-            <Button x:Name="ButtonUint" Grid.Row="4" Click="ButtonUint_Click" Foreground="Gray">uint</Button>
-            <Button x:Name="ButtonLong" Grid.Row="5" Click="ButtonLong_Click" Foreground="Gray">long</Button>
-            <Button x:Name="ButtonUlong" Grid.Row="6" Click="ButtonUlong_Click" Foreground="Gray">ulong</Button>
+            <TextBlock  FontFamily="Trebuchet MS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="SemiBold" Text="Tipos Inteiros" />
+            <Button x:Name="ButtonByte" Grid.Row="1" Click="ButtonByte_Click" Foreground="Gray">byte</Button>
+            <Button x:Name="ButtonShort" Grid.Row="2" Click="ButtonShort_Click" Foreground="Gray">short</Button>
+            <Button x:Name="ButtonUshort" Grid.Row="3" Click="ButtonUshort_Click" Foreground="Gray">ushort</Button>
+            <Button x:Name="ButtonInt" Grid.Row="4" Click="ButtonInt_Click" Foreground="Gray">int</Button>
+            <Button x:Name="ButtonUint" Grid.Row="5" Click="ButtonUint_Click" Foreground="Gray">uint</Button>
+            <Button x:Name="ButtonLong" Grid.Row="6" Click="ButtonLong_Click" Foreground="Gray">long</Button>
+            <Button x:Name="ButtonUlong" Grid.Row="7" Click="ButtonUlong_Click" Foreground="Gray">ulong</Button>
         </Grid>
 
         <Grid Grid.Column="1" Margin="5">
@@ -40,12 +42,44 @@
                 <RowDefinition Height="45"/>
                 <RowDefinition Height="45"/>
                 <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
             </Grid.RowDefinitions>
 
-            <Button x:Name="ButtonFloat" Grid.Row="0" Click="ButtonFloat_Click" Foreground="Gray">float</Button>
-            <Button x:Name="ButtonDouble" Grid.Row="1" Click="ButtonDouble_Click" Foreground="Gray">double</Button>
-            <Button x:Name="ButtonDecimal" Grid.Row="2" Click="ButtonDecimal_Click" Foreground="Gray">decimal</Button>
-            <Button x:Name="ButtonValidacao" Grid.Row="3" Click="ButtonValidacao_Click" Foreground="Gray">validacao</Button>
+            <TextBlock  FontFamily="Trebuchet MS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="SemiBold" Text="Tipos Ponto Flutuante" />
+            <Button x:Name="ButtonFloat" Grid.Row="1" Click="ButtonFloat_Click" Foreground="Gray">float</Button>
+            <Button x:Name="ButtonDouble" Grid.Row="2" Click="ButtonDouble_Click" Foreground="Gray">double</Button>
+            <Button x:Name="ButtonDecimal" Grid.Row="3" Click="ButtonDecimal_Click" Foreground="Gray">decimal</Button>
+            <Button x:Name="ButtonValidacao" Grid.Row="4" Click="ButtonValidacao_Click" Foreground="Gray">validacao</Button>
+        </Grid>
+
+        <Grid Grid.Column="2" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock  FontFamily="Trebuchet MS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="SemiBold" Text="Tipos Data" />
+            <Button x:Name="ButtonDataUm" Grid.Row="1" Click="ButtonDataUm_Click" Foreground="Gray">dia/mes/ano</Button>
+            <Button x:Name="ButtonDataDois" Grid.Row="2" Click="ButtonDataDois_Click" Foreground="Gray">ano/mes/dia</Button>
+            <Button x:Name="ButtonDataTres" Grid.Row="3" Click="ButtonDataTres_Click" Foreground="Gray">ano/dia/mes</Button>
+            <Button x:Name="ButtonDataQuatro" Grid.Row="4" Click="ButtonDataQuatro_Click" Foreground="Gray">yyyy-MM-dd</Button>
+            <Button x:Name="ButtonDataExtenso" Grid.Row="5" Click="ButtonDataExtenso_Click" Foreground="Gray">extenso</Button>
+        </Grid>
+
+        <Grid Grid.Column="3" Margin="5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+                <RowDefinition Height="45"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock  FontFamily="Trebuchet MS" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="18" FontWeight="SemiBold" Text="Outros" />
+            <Button x:Name="ButtonBoolean" Grid.Row="1" Click="ButtonBoolean_Click" Foreground="Gray">boolean</Button>
+            <Button x:Name="ButtonEnum" Grid.Row="2" Click="ButtonEnum_Click" Foreground="Gray">enum</Button>
         </Grid>
     </Grid>
 </Window>
